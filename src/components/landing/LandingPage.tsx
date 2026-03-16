@@ -67,6 +67,7 @@ export default function LandingPage() {
             key={section.id}
             {...section}
             isActive={index === activeSection}
+            onButtonClick={() => handleNavClick(index + 1)}
           />
         ))}
       </div>
